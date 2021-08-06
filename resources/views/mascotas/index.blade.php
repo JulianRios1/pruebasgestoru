@@ -45,11 +45,11 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label>Nombre</label>
-                            <input type="text" name='nombre' id='nombre' class="form-control requerido" required>
+                            <input type="text" name='nombre' id='add_nombre' class="form-control requerido" required>
                         </div>
                         <div class="form-group">
                             <label>Tipo de mascota</label>
-                            <select name="idtipomascota" id="idtipomascota" class="form-control select2bs4" required>
+                            <select name="idtipomascota" id="add_idtipomascota" class="form-control select2bs4" required>
                                 <option value="">Selecciones un tipo</option>
                             </select>
                         </div>
