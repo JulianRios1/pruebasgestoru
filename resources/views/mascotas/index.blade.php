@@ -268,9 +268,11 @@
             })
             $("#btndelete").click(function(event) {
                 event.preventDefault();
-                const id = $("#btndelete").data('id');
+                const id = $("#iddelete").val();
+                var url = `{{ route('mascotas.destroy', '') }}` + `/${id}`;
+                // console.log(url);
+                // $("#FormDeleteMascota").attr("action", url)
                 if (id >= 1) {
-                    var url = `{{ route('mascotas.destroy', '') }}` + `/${id}`;
                     var data = new FormData(document.getElementById("FormDeleteMascota"));
                     data.append("_method", 'DELETE');
                     data.append("_token", '{{ csrf_token() }}');
